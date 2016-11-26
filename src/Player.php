@@ -27,23 +27,23 @@ class Player
 
     public function winpoint(){
 
-        $this->points += 1;
+        $this->points+=1;
 
     }
 
-    public function getScore(){
-
-        return true;
-    }
-
-    public function points(){
+    public function score(){
 
         return $this->code[$this->points];
     }
 
+    public function points(){
+
+        return $this->points;
+    }
+
     public function name(){
 
-        return $this->code[$this->name];
+        return $this->name;
     }
 
 }
